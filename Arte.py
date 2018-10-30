@@ -1,6 +1,6 @@
 print("Tema: Arte")
-print (u"¿En qué museo se encuentra La Venus de Milo?")
-Palabra='Museo del Louvre'
+print ("¿En qué museo se encuentra La Venus de Milo?")
+Palabra='MUSEO DE LOUVRE'
 tuPalabra=''
 vidas=10
 while vidas>0:
@@ -8,20 +8,25 @@ while vidas>0:
     for letra in Palabra:
         if letra in tuPalabra:
             print(letra, end =" "   )
+
         else :
             print("_",end =" ")    
             fallas+=1
+            
     if fallas==0:
-        print(u"¡Felicidades ganaste!")    
+        print("¡Felicidades ganaste!")    
         break
-    tuLetra=input("Introduce una letra: ")    
+
+    tuLetra=input("Introduce una letra: ") .upper()
     tuPalabra+=tuLetra
+
+    
     if tuLetra not in Palabra:
         vidas-=1
-        print("Equivocacion")
-        print("Tu tienes" +vidas+ "vidas")
+        print("Equivocacion","  Tu tienes" , vidas,"vidas")
+    
     if vidas==0:
-        print (u"¡Perdiste!")
+        print ("¡Perdiste!")
 else:
     print("Gracias por participar")        
 
