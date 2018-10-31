@@ -1,3 +1,9 @@
+import random
+import os
+
+palabras=["MUSEO DE LOUVRE","PIERO DELLA FRANCESCA","BARROCO"]
+
+palabras=random.choice(palabras)
 
 fallo0='''
             !====B
@@ -55,13 +61,16 @@ fallo6='''
                  B
            ============
 '''
-palabra='MUSEO DE LOUVRE'
-tu_palabra=''
-letras_Todas=''
+
+letras_correctas=" "
+letras_Todas=" "
 fallos=0
+
 while True:
+
+    os.system("cls")
     
-    print("Tema: Arte")
+    print("************Tema: Arte******************")
     print ("¿En qué museo se encuentra La Venus de Milo?")
     if fallos==0:
         print(fallo0)
@@ -77,36 +86,48 @@ while True:
         print(fallo5) 
     elif fallos==6:
         print(fallo6)     
+    print()    
 
     
-    for letra in palabra:
-        if letra in tu_palabra:
-            print(letra, end =" ")
-        
+
+    for letra in palabras:
+        if letra in letras_correctas:
+            print(letra,end=" ")
+               
         else:
-            print("_",end=" ")
-            falla+=1
-    
+            print("*",end=" ")
+            
+
+ 
+    print()
+    print()
+   
 
 
-    if falla==0:
+    if letras_correctas==palabras:
         print("¡Haz ganado felicitaciones!")      
         break
+
     if fallos >5:
         print("La respuesta  era: ",palabras)
         print("Haz perdido")
         break
+
     while True:
        
         letra_usuario=input("Introduce una letra: ") .upper()
         if len(letra_usuario)<1 or len(letra_usuario)>1:
-            print("Introduce una letra")
-        elif letra_usuario in letras_Todas:
+            print("Introduce una sola letra")
+        elif letra_usuario in letras_correctas:
             print("Esa letra ya la escribiste")
         elif not letra_usuario.isalpha():
-            print("Introduce una letra")
+            print("Introduce una letra no numeros ni signos(simbolos)")
         else:
             letras_Todas+=letra_usuario
             break
     if letra_usuario not in palabras:
         fallos+=1
+    else:
+        letras_correctas+=letra_usuario
+
+  
