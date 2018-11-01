@@ -3,7 +3,7 @@ from tkinter import *
 raiz= Tk()
 raiz.title("AHORCADO")
 raiz.resizable(False,False)
-raiz.geometry("350x300")
+raiz.geometry("350x350")
 
 miFrame=Frame(raiz, width=1200, height=600)
 miFrame.pack()
@@ -41,8 +41,8 @@ geografiaBoton.pack(side="top", fill="both", expand="False", padx=10, pady=10)
 geografiaBoton.config(bg="Grey")
 geografiaBoton.config(cursor="hand2")
 
-#respuestaBoton = Button(raiz, text="Enviar respuesta") #Para agregarle una acción ponemos command=Accioncreada
-#respuestaBoton.pack(side="top", fill="both", expand="False", padx=10, pady=10)
+respuestaBoton = Button(raiz, text="Enviar respuesta") #Para agregarle una acción ponemos command=Accioncreada
+respuestaBoton.pack(side="top", fill="both", expand="False", padx=10, pady=10)
 
 
 raiz.mainloop()
