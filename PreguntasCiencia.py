@@ -14,7 +14,7 @@ preguntasCiencia = ['1.¿Cuántas patas tienen los cangrejos?','2.¿Cómo se lla
 ,'38¿Qué sustancia se encuentra en el interior de un termómetro?','39.¿Cuántas patas tiene una abeja?'
 ,'40.¿Cómo se denomina a un periodo de 5 años?','41.¿Cuántos kilos hay en una tonelada?'
 ,'42.¿Cómo se llama al mayor número que divide dos o más números sin dejar resto?','43.¿Qué líquido segrega el páncreas?'
-,'44.¿Cuál de los siguientes peces es propio de alta mar?']
+,'44.¿Cuál de los siguientes peces es propio de alta mar?','FIN']
 
 respuestasCiencia = ["CINCO PARES","NUEZ","LA PROPIEDAD CONMUTATIVA","CUCARACHA","AGUILUCHO","ARCO","NOVENTA","TIMBRE","FUSIÓN","FÉMUR","BOTÁNICA","CLOROFILA","MERIDIANO DE GREENWICH","CENTÍGRADOS","DOS","SATURNO","LAS AVES","JABATO",
 "FLEMMING","MOLÉCULAS","POSITIVA","OVINA","CONDENSACIÓN","TRESCIENTOS MIL KM POR SEGUNDO","MÍNIMO COMÚN MÚLTIPLO","PLOMO","ENERGÍA ATÓMICA","SEIS METROS","BREVA","FOSAS NASALES","EL TIBURÓN BALLENA","SETESCIENTAS VEINTE VUELTAS","VÉRTEBRAS","MOL",
