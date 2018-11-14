@@ -9,7 +9,9 @@ Nuestro programa es un juego de ahorcado a base de preguntas de Cultura General 
 
 ## Autores
 ARELLANO ASCA, INGRID MADELEY
+
 LAZARO SAPALLANAY, YANINA LILI
+
 MURRIETA BOHÓRQUEZ, ANDY VALENTINO
 
 ## Manual de instalación y uso
