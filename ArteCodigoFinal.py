@@ -8,7 +8,7 @@ palabras=["MUSEO DE LOUVRE","PIERO DELLA FRANCESCA","BARROCO","IMPRESIONISMO","R
           "ROMÁNICO BARROCO GÓTICO","MIGUEL ÁNGEL","MUSEO DEL PRADO","LONDRES","GÓTICO","BARROCO","DAKOTA DEL SUR","ANTONIO GAUDÍ",
           "RENACIMIENTO","AUGUSTE RODIN"]
 r=0
-p=0|
+p=0
 preguntas=['1. ¿En qué museo se encuentra "La Venus de Milo"?  ','2. ¿Qué artista pintó "El sueño de Constantino"? ',
 '3. ¿En qué movimiento cultural se encuentra Gian Lorenzo Bernini?','4. ¿En qué movimiento cultural se encuentra Van Gogh?',
 '5. ¿Qué artista pintó "Triunfo de Galatea"?','6. Las pirámides de Guiza forman parte del:','7. ¿De qué estilo arquitectónico es la catedral de Sevilla?',
