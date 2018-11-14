@@ -136,6 +136,7 @@ while True:
         letras_Todas=' '
         letras_correctas=' '
         fallos=0
+        os.system("pause")
         
     if fallos >5:
         print("Haz perdido")
@@ -146,21 +147,25 @@ while True:
         letras_Todas=' '
         letras_correctas=' '
         fallos=0
-       
-    #bucle para que el usuario ingrese la letra 
-    while True:        
-        letra_usuario=input("Ingrese una letra: ").upper()
-        if len(letra_usuario)<1 or len(letra_usuario)>1:
-            print("Introduce una sola letra")
-        elif letra_usuario in letras_correctas:
-            print("Esa letra ya la escribiste")
-        elif not letra_usuario.isalpha():
-            print("Introduce una letra no numeros ni signos(simbolos)")
-        else:
-            letras_Todas+=letra_usuario
-            break  
-    #comprobamos si la letra esta en paldabra         
-    if letra_usuario not in palabra:
-        fallos+=1
+        os.system("pause")
     else:
-        letras_correctas+=letra_usuario
+        #bucle para que el usuario ingrese la letra   
+        while True:   
+            letra_usuario=input("Ingrese una letra: ").upper()
+            if len(letra_usuario)<1 or len(letra_usuario)>1:
+                print("Introduce una sola letra")
+            elif letra_usuario in letras_correctas:
+                print("Esa letra ya la escribiste")
+            elif not letra_usuario.isalpha():
+                print("Introduce una letra no numeros ni signos(simbolos)")
+            else:
+                letras_Todas+=letra_usuario
+                break  
+        #comprobamos si la letra esta en paldabra         
+        if letra_usuario not in palabra:
+            fallos+=1
+        else:
+            letras_correctas+=letra_usuario
+       
+  
+    
